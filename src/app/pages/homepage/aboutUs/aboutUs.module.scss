@@ -1,0 +1,27 @@
+@use '../../../main.module.scss';
+
+.ABOUTUS {
+    width: 100%;
+    display: grid;
+    background: linear-gradient(to right, main.$gradientL-color, main.$gradientR-color);
+    padding: 70px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    clip-path: polygon(0% 0%, 50% 10.75%, 100% 0%, 100% 100%, 0% 100%);
+    align-items: center;
+}
+
+
+.h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    width: 300px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.description {
+    color: #fff;
+    padding: 0px 40px;
+}

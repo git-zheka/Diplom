@@ -1,0 +1,94 @@
+@use '../../main.module.scss';
+
+
+.nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Перший блок зліва, другий по центру, останній справа */
+    padding: 20px;
+    align-items: center;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.nav > * { 
+    justify-self: center; 
+    align-self: center;
+}
+
+.Logo img{
+    width: 100%;
+}
+
+.Navigations a{
+    color: main.$noactive-color;
+    transition: 0.2s;
+}
+
+.Navigations a:hover{
+    color: #202020;
+    transition: 0.2s;
+}
+
+.Navigations ul{
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+.Navigations ul li{
+    margin-right: 20px;
+    
+}
+
+
+
+
+
+.Auth {
+    display: flex;
+    
+}
+
+.Auth .btnLogin,.btnRegis {
+    margin-right: 20px;
+    padding: 5px 15px;
+    border-radius: 40px;
+}
+
+.btnLogin {
+    border: solid 3px main.$gradientL-color;
+    color: main.$gradientL-color;
+    transition: 0.2s;
+}
+
+.btnRegis {
+    background: linear-gradient(to right, main.$gradientL-color, main.$gradientR-color);
+    color: #fff;
+    transition: 0.2s;
+    border: solid 3px main.$gradientL-color;
+}
+
+.btnLogin:hover {
+    border: solid 3px main.$gradientL-color;
+    color: main.$gradientL-color;
+    box-shadow: 0px 0px 2px 1px main.$gradientL-color inset;
+    transition: 0.2s;
+
+}
+
+.btnRegis:hover {
+    background: linear-gradient(to right, main.$gradientL-color, main.$gradientR-color);
+    color: #fff;
+    transition: 0.2s;
+    box-shadow: 0px 0px 2px 1px main.$gradientL-color ;
+}
+
+
+
+.LoginLogo {
+    background-color: red;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}

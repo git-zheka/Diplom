@@ -1,0 +1,101 @@
+@use '../../../main.module.scss';
+
+.MOREINFO {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 40px;
+    grid-gap: 40px;
+}
+
+
+.logoAndPrice {
+
+}
+
+.logoAndPrice img {
+    width: 80%;
+}
+
+.price {
+    background-color:main.$gradientL-color;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+.allinfo h1{
+    color: #000;
+}
+
+.allinfo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+}
+
+.allinfo h2 {
+    color: main.$gradientL-color ;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.allinfo h3 {
+    font-size: 20px;
+}
+
+.NameSchool {
+    display: flex;
+    font-size: 32px;
+}
+
+.name {
+    color: main.$gradientL-color;
+    font-weight: 700;
+}
+
+
+
+.socialMedia {
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.btnTakeCourse {
+    width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    background: linear-gradient(to right, main.$gradientL-color, main.$gradientR-color);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btnTakeCourse:hover {
+    box-shadow: 0px 0px 5px 1px main.$gradientL-color;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
