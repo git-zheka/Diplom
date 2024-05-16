@@ -14,11 +14,11 @@ export default function Menu() {
 
   return (
     <nav className={style.nav}>
-      <div className={style.Logo}> <Image src={logo} alt={""}/> </div>
+      <div className={style.Logo}> <Link href="../../"> <Image src={logo} alt={""}/> </Link></div>
       
       <div className={style.Navigations}> 
         <ul>
-            <li><Link href='/'> Курси </Link></li>
+            <li><Link href='../../pages/cousesPage'> Курси </Link></li>
             <li><Link href='/'> Про нас </Link></li>
             <li><Link href='/'> Заявки </Link></li>
          </ul>

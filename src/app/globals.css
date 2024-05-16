@@ -31,3 +31,13 @@ a {
   padding: 0;
   border: 0;
 }
+
+.Responsive_center {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.Responsive {
+  max-width: 1280px;
+}

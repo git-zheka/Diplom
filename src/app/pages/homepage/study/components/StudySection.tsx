@@ -13,7 +13,7 @@ export default function StudySection() {
     <div className={style.STUDY}>
       <div className={style.sectionStudy}>
         <div className={style.H2}><h2>Сфери навчання</h2></div>
-        <div className={style.btnAllCurses}>Перейти до усіх курсів <div className={style.arrow}> <Image src={Arrow} alt="Picture of the author"/> </div></div>
+        <div className={style.btnAllCurses}><Link href="../../../../pages/cousesPage">Перейти до усіх курсів</Link> <div className={style.arrow}> <Image src={Arrow} alt="Picture of the author"/> </div></div>
         
         <div className={style.allTopics}>
           <TopicBox img={Btc} text="dasdasd" />
